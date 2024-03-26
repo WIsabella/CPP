@@ -1,4 +1,5 @@
   #include <iostream>
+
     using namespace std;
     class DataType
     {
@@ -18,23 +19,23 @@
     		data.f = f;
     		type = FLOAT;
     	}
-    	void Show()
+
+
+    	void print()
     	{
     		switch (type)
     		{
     		case CHAR:
-    			cout << data.c << endl;
+    			cout << "char: "<<data.c << endl;
     			break;
     		case INT:
-    			cout << data.i << endl;
+    			cout << "int: "<<data.i << endl;
     			break;
     		case FLOAT:
-    			cout << data.f << endl;
+    			cout << "float: "<<data.f << endl;
     			break;
     		default:
     			break;
-           
-    
     
     		}
     	}
@@ -50,12 +51,9 @@
     	DATA data;
     };
     int main()
-    {
-    	DataType a('c');
-    	a.Show();
-    	DataType b(960);
-    	b.Show();
-    	DataType c(265.12f);//265.12默认为double型，加f为float型
-    	c.Show();
-    	return 0;
-    }
+	{
+        DataType aa('e'), bb(16), cc(2.56F);
+        aa.print();
+        bb.print();
+        cc.print();
+}
