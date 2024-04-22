@@ -1,0 +1,51 @@
+int i =53;
+float f=4700113.141593;
+T.setf(ios::unitbuf);
+T.setf(ios::showbase);
+T.setf(ios::uppercase);
+T.setf(ios::showpos);
+T<<i<<endl;
+T.setf(ios::hex,ios::basefield);
+T<<i<<endl;
+T.unsetf(ios::uppercase);
+T.setf(ios::oct,ios::basefield);
+T.setf(ios::dec,ios::basefield);
+T.setf(ios::left,ios::adjustfield);
+T.fill('O');
+T<<"fill char:"<<T.fill()<<endl;
+T.width(8);
+53
+T.setf(ios::right,ios::adjustfield);
+T.width(8);
+53
+T.setf(ios::internal, ios::adjustfield);
+T.width(8);
+53
+T<<i<<endl;
+T.unsetf(ios::showpos);
+T.setf(ios::showpoint);
+T<<"prec="<<T.precision()<<endl;
+T.setf(ios::scientific, ios::floatfield);
+T<<endl<<f<<endl;
+T.setf(ios::fixed,ios::floatfield);
+T<<f<<endl;
+T.setf(0,ios::floatfield);
+T<<f<<endl;
+T.precision(16);
+T<<"prec="<<T.precision()<<endl;
+T<<endl<<f<<endl;
+T.setf(ios::scientific, ios::floatfield);
+T<<endl<<f<<endl;
+T.setf(ios::fixed,ios::floatfield);
+T<<f<<endl;
+T.setf(0,ios::floatfield);
+T<<f<<endl;
+T.width(8);
+Is there any more?
+T.width(36);
+Is there any more?
+T.setf(ios::left,ios::adjustfield);
+T.width(36);
+Is there any more?
+T.unsetf(ios::showpoint);
+T.unsetf(ios::unitbuf);

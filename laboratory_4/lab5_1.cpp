@@ -14,6 +14,12 @@ int main()
     int x=10,y=20;
     cout<<"x="<<x<<endl;
     cout<<"y="<<y<<endl;
+    { 
+    int x=3, y=4;
+    cout<<"in code block: "<<endl;
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+    }
     cout<<"Step into fn1()..."<<endl;
     fn1();
     cout<<"Back in main"<<endl;
